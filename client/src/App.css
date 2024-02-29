@@ -266,9 +266,6 @@ body {
   gap: 10px;
 }
 
-.quantity-wrapper span {
-}
-
 .cart-item .btn-quantity {
   background: #ddd;
   border-radius: 50%;
@@ -321,3 +318,4 @@ body {
 .zoom-in {
   transform: scale(0);
 }
+

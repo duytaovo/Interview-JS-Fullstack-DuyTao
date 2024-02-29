@@ -40,5 +40,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "Thu Nguyen",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
 }

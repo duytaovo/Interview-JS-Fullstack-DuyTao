@@ -1,7 +1,6 @@
 import productModel from "../models/productModel.js";
 
-//fetch all product
-export const fetchAllProductController = async (req, res) => {
+export const getAllProductController = async (req, res) => {
   try {
     const products = await productModel.find({});
     res.status(200).send({
@@ -18,8 +17,7 @@ export const fetchAllProductController = async (req, res) => {
   }
 };
 
-//fetch single product
-export const fetchSingleProductController = async (req, res) => {
+export const getSingleProductController = async (req, res) => {
   try {
     const product = await productModel.findOne({ _id: req.params.id });
     res.status(200).send({
@@ -36,7 +34,6 @@ export const fetchSingleProductController = async (req, res) => {
   }
 };
 
-// create product
 export const createProductController = async (req, res) => {
   try {
     const { image, name, description, price, color } = req.body;
@@ -76,7 +73,7 @@ export const updateProductController = async (req, res) => {
         price,
         color,
       },
-      { new: true }
+      { new: true },
     );
     await product.save();
     res.status(200).send({
@@ -109,3 +106,4 @@ export const deleteProductController = async (req, res) => {
     });
   }
 };
+

@@ -3,17 +3,17 @@ import {
   createProductController,
   updateProductController,
   deleteProductController,
-  fetchAllProductController,
-  fetchSingleProductController,
+  getAllProductController,
+  getSingleProductController,
 } from "../controllers/productController.js";
 
 const router = express.Router();
 
 //FETCH ALL PRODUCT
-router.get("/", fetchAllProductController);
+router.get("/", getAllProductController);
 
 //FETCH SINGLE PRODUCT
-router.get("/:id", fetchSingleProductController);
+router.get("/:id", getSingleProductController);
 
 //CREATE PRODUCT
 router.post("/", createProductController);
@@ -25,3 +25,4 @@ router.put("/:id", updateProductController);
 router.delete("/:id", deleteProductController);
 
 export default router;
+
