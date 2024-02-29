@@ -9,7 +9,6 @@ import minus from "./assets/minus.png";
 import { caculateTotalPrice, formatPrice } from "./helpers/format";
 import API from "./api.js";
 import ProductCard from "./components/product-card/index.jsx";
-import data from "./data/shoes.json";
 
 function App() {
   const [shoes, setShoes] = useState([]);
@@ -18,7 +17,6 @@ function App() {
   useEffect(() => {
     API.get("/")
       .then((response) => {
-        // setShoes(data.shoes);
         setShoes(response.data.products);
       })
       .catch((error) => {
