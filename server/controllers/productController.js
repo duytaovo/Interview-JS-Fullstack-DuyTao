@@ -59,7 +59,6 @@ export const createProductController = async (req, res) => {
   }
 };
 
-//update product
 export const updateProductController = async (req, res) => {
   try {
     const { image, name, description, price, color } = req.body;

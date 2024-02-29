@@ -1,12 +1,7 @@
 ﻿<ul>
     <li>Frontend: <a href="https://interview-js-fullstack-duy-tao.vercel.app/" alt="link demo frontend">https://interview-js-fullstack-duy-tao.vercel.app/</a>.</li>
     <li>Backend: 
-        <a href="https://interview-js-fullstack-duytao.onrender.com/api/v1/products/" alt="link demo API">https://interview-js-fullstack-duytao.onrender.com/api/v1/products/ </a> with APIs: 
-            GET /api/v1/products: Get all products
-            GET /api/v1/products/:id: Get a product by id
-            POST /api/v1/products: Create a new product
-            PUT /api/v1/products/:id: Update a product by id
-            DELETE /api/v1/products/:id: Delete a product by id
+        <a href="https://interview-js-fullstack-duytao.onrender.com/api/v1/products/" alt="link demo API">https://interview-js-fullstack-duytao.onrender.com/api/v1/products/ </a> 
     </li>
 </ul>
 
