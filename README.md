@@ -2,7 +2,7 @@
 
 <p>My application:
 <ul>
-    <li>Frontend: <a href="https://shoes-store-ntmt.netlify.app/" alt="link demo frontend">https://shoes-store-ntmt.netlify.app/</a>.</li>
+    <li>Frontend: <a href="https://interview-js-fullstack-duy-tao.vercel.app/" alt="link demo frontend">https://interview-js-fullstack-duy-tao.vercel.app/</a>.</li>
     <li>Backend: 
         <a href="https://shoes-store-ntmt.onrender.com" alt="link demo API">https://shoes-store-ntmt.onrender.com/api/v1/products/ </a> with APIs: 
         <ul>
