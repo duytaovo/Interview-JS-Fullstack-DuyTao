@@ -17,7 +17,7 @@ export const getAllProductController = async (req, res) => {
   }
 };
 
-export const getSingleProductController = async (req, res) => {
+export const getProductController = async (req, res) => {
   try {
     const product = await productModel.findOne({ _id: req.params.id });
     res.status(200).send({
@@ -89,7 +89,6 @@ export const updateProductController = async (req, res) => {
   }
 };
 
-//delete product
 export const deleteProductController = async (req, res) => {
   try {
     await productModel.findByIdAndDelete(req.params.id);

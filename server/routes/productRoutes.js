@@ -4,24 +4,19 @@ import {
   updateProductController,
   deleteProductController,
   getAllProductController,
-  getSingleProductController,
+  getProductController,
 } from "../controllers/productController.js";
 
 const router = express.Router();
 
-//FETCH ALL PRODUCT
 router.get("/", getAllProductController);
 
-//FETCH SINGLE PRODUCT
-router.get("/:id", getSingleProductController);
+router.get("/:id", getProductController);
 
-//CREATE PRODUCT
 router.post("/", createProductController);
 
-//UPDATE PRODUCT
 router.put("/:id", updateProductController);
 
-//DELETE PRODUCT
 router.delete("/:id", deleteProductController);
 
 export default router;
